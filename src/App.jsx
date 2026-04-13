@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import carImage from "./assets/car-image.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,7 +56,7 @@ const Hero = () => {
           <div ref={scrollCarRef} className="w-full">
             <img
               ref={carRef}
-              src="/car-image.png"
+              src={carImage}
               alt="Car"
               className="w-full h-auto object-contain block will-change-transform"
             />
